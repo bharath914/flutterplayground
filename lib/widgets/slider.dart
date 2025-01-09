@@ -84,11 +84,11 @@ class _SliderWidgetScreenState extends State<SliderWidgetScreen> {
               },
               min: 0,
               max: 100,
-              activeColor: Colors.green,
+              activeColor: Colors.green[400],
               inactiveColor: Colors.green[100],
               thumbColor: Colors.red,
               label: _currentValue.round().toString(),
-              
+              divisions: 100,
             )
           ],
         ),

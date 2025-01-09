@@ -1,6 +1,16 @@
 import 'package:flutterplayground/widgets/containerwidgetscreen.dart';
+import 'package:flutterplayground/widgets/expandedwidget.dart';
+import 'package:flutterplayground/widgets/gesture/draggabledetection.dart';
+import 'package:flutterplayground/widgets/gesture/gesturedetection.dart';
+import 'package:flutterplayground/widgets/gesture/inkwell.dart';
+import 'package:flutterplayground/widgets/gesture/swipegesture.dart';
 import 'package:flutterplayground/widgets/imagewidgetscreen.dart';
+import 'package:flutterplayground/widgets/listview/basiclistviewwidget.dart';
+import 'package:flutterplayground/widgets/listview/infinitescrollinglistview.dart';
+import 'package:flutterplayground/widgets/listview/listviewbuilder.dart';
+import 'package:flutterplayground/widgets/listview/listviewseperated.dart';
 import 'package:flutterplayground/widgets/slider.dart';
+import 'package:flutterplayground/widgets/stackwidget.dart';
 import 'package:flutterplayground/widgets/textfield.dart';
 import 'package:flutterplayground/widgets/textwidgetscreen.dart';
 
@@ -11,7 +21,17 @@ final List<Map<String, dynamic>> widgetsList = [
   {"name": "Row ","screen":()},
   {"name":"Image","screen": ImageWidgetScreen()},
   {"name": "TextField","screen": TextFieldWidgetScreen()},
-  {"name":"Slider","screen": SliderWidgetScreen()}
+  {"name":"Slider","screen": SliderWidgetScreen()},
+  {"name":"Stack" ,"screen":StackWidgetScreen()},
+  {"name":"Expanded Widget" , "screen":ExpandedWidgetScreen()},
+  {"name":"Basic ListView", "screen":BasicListViewWidgetScreen()},
+  {"name":"ListView Builder", "screen":ListViewBuilderScreen()},
+  {"name":"Separated ListView","screen":ListViewSeperatedScreen()},
+  {"name":"Infinite/Paging ListView","screen":InfiniteScrollingListViewScreen()},
+  {"name":"Gesture Detection","screen":GestureDetectionScreen()},
+  {"name":"Swipe Detection","screen":SwipeGestureScreen()},
+  {"name":"Inkwell Detection","screen":InkWellWithSnackbarScreen()},
+  {"name":"Draggable Detection","screen":DraggableDetectionScreen()}
 ];
 
 // final List<Map<String, dynamic>> widgetsList = [
